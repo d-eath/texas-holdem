@@ -1,0 +1,11 @@
+<div class="container">
+    <div *ngIf="players" class="row">
+        <div class="col-12">
+            <app-board [flop]="flop" [turn]="turn" [river]="river" [highlights]="highlights"></app-board>
+        </div>
+
+        <div *ngFor="let player of players; index as i" class="col-6 col-xl-3">
+            <app-player [playerNumber]="i + 1" [player]="player" [winner]="winners.includes(player)" [highlights]="highlights"></app-player>
+        </div>
+    </div>
+</div>

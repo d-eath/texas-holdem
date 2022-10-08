@@ -1,0 +1,5 @@
+<img
+[ngClass]="{ blue: highlight === 1, orange: highlight === 2 }"
+[src]="'assets/img/cards/' + card.toString() + '.svg'"
+[alt]="this.getRankText() + ' de ' + this.getSuitText()"
+draggable="false">

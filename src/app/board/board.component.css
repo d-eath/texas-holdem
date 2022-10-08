@@ -1,0 +1,28 @@
+div.card {
+    background-color: #376600;
+}
+
+div.section {
+    display: inline;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+h2 {
+    color: white;
+    margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+    div.section {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 575px) {
+    div.section {
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+}

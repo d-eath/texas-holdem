@@ -1,0 +1,25 @@
+img {
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 90px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+img:not(.blue):not(.orange) {
+    filter: brightness(60%);
+}
+
+img.blue {
+    box-shadow: 0 0 0 4px cyan;
+}
+
+img.orange {
+    box-shadow: 0 0 0 4px darkorange;
+}
+
+@media (max-width: 767px) {
+    img {
+        width: 75px;
+    }
+}

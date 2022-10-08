@@ -1,0 +1,10 @@
+div.container { 
+    padding-top: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+div.col-6, div.col-12 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}

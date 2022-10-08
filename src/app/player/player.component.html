@@ -1,0 +1,11 @@
+<div class="card h-100">
+    <div class="card-body text-center">
+        <span class="player-number">Joueur {{ playerNumber }}</span>
+        <span [ngClass]="{ shown: winner }" class="winner">★ GAGNANT ★</span>
+        <!--app-card [card]="player.cards[0]" [highlight]="0"></app-card-->
+        <!--app-card [card]="player.cards[1]" [highlight]="0"></app-card-->
+        <app-card *ngFor="let card of player.cards" [card]="card" [highlight]="getHighlight(card)"></app-card>
+        <span class="value-title">{{ player.textValue.split(' : ')[0] }}</span>
+        <span class="value-description">{{ player.textValue.split(' : ')[1] }}</span>
+    </div>
+</div>

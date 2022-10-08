@@ -1,0 +1,14 @@
+<div class="card">
+    <h2 class="text-center">Cartes publiques</h2>
+    <div class="card-body text-center">
+        <div class="section">
+            <app-card *ngFor="let card of flop" [card]="card" [highlight]="getHighlight(card)"></app-card>
+        </div>
+        <div class="section">
+            <app-card [card]="turn" [highlight]="getHighlight(turn)"></app-card>
+        </div>
+        <div class="section">
+            <app-card [card]="river" [highlight]="getHighlight(river)"></app-card>
+        </div>
+    </div>
+</div>
